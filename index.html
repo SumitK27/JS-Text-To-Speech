@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text To Speech</title>
+
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <h1>Text To Speech</h1>
+        <main>
+            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            <div class="container">
+                <div class="playback-container">
+                    <label for="speed">Playback Speed</label>
+                    <hr class="divider" />
+                    <div class="playback-input-container">
+                        <span class="show-speed" id="show-speed">x1</span>
+                        <input
+                            type="range"
+                            name="speed"
+                            id="speed"
+                            min="0.5"
+                            step="0.25"
+                            max="3"
+                            value="1"
+                        />
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <label for="">Controls</label>
+                    <hr class="divider" />
+                    <div class="buttons-container">
+                        <button class="btn" id="play-btn">Play</button>
+                        <button class="btn" id="pause-btn">Pause</button>
+                        <button class="btn" id="stop-btn">Stop</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h3>
+                <a href="https://github.com/SumitK27"> SumitK27 </a>
+            </h3>
+        </footer>
+    </body>
+</html>
